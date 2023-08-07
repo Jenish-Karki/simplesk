@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: linear-gradient(to right, rgb(97, 144, 232), rgb(167, 191, 232));
+    width: 700px;
+    margin-top: 1rem;
+}
+.form-container-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heading{
+    margin-bottom: 1rem;
+color: #E8CBC0;
+    font-weight: bold;
+}
+.rowOne,.rowTwo,.rowThree,.rowFour,.rowFive,.rowSix,.rowSeven{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1rem;
+    gap: 5rem;
+}
+div{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+input{
+    height: 30px;
+    width: 210px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition:0.3s ease-in-out;
+}
+input[type="text"]{
+    text-align: center;  
+    font-weight: 500;
+    font-size: 15px;
+ }
+ input[type="date"]{
+    text-align: center;  
+    font-weight: 500;
+    font-size: 15px;
+ }
+ input[type="number"]{
+    text-align: center;  
+    font-weight: 500;
+    font-size: 15px;
+ }
+ ::placeholder{
+    opacity: 0.4;
+ }
+label{
+    font-weight: bold;
+}
+.success{
+    height: 30px;
+    width: 130px;
+    outline: none;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));
+  font-weight: 600;
+  color: aliceblue;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border: none;
+}
+.fa-forward{
+    margin-left: 1rem;
+}
+.fa-backward{
+    margin-right: 15px;
+}
+input:hover{
+  height:40px;
+}
+.button{
+    display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+
+
+
+@media screen and (max-width:700px){
+    .form-container{
+        width: 650px;
+    }
+}
+@media screen and (max-width:640px){
+    .form-container{
+        width: 550px;
+    }
+}
+@media screen and (max-width:550px){
+    .form-container{
+        width:450px;
+    }
+input{
+    width: 160px;
+}
+}
+@media screen and (max-width:450px){
+    label{
+        font-size: 13px;
+    }
+    .form-container{
+        width:400px;
+    }
+input{
+    width: 150px;
+}
+div{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+}
+@media screen and (max-width:400px){
+    .form-container{
+        width:350px;
+    }
+input{
+    width: 120px;
+}
+div{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+}

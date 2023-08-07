@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+}
+body{
+    background: linear-gradient(to right, rgb(189, 195, 199), rgb(44, 62, 80));
+}
+.labelForInput{
+    margin-right: -25rem;
+    border: 2px dashed #000;
+    height: 100px;
+    width: 400px;
+    text-align: center;
+}
+.upload-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70px;
+}
+.dragAndDrop{
+height: 100px;
+width: 400px;
+opacity: 0;
+margin-left: 2rem;
+}
+.labelForInput{
+   padding: 1rem;
+}
+.heading{
+    margin-top: 1rem;
+    text-align: center;
+    padding: 1rem;
+    color: aliceblue;
+}
+
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.fa-forward{
+    margin-left: 1rem;
+}
+#inputForheading{
+    height: 35px;
+    width: 200px;
+    border: none;
+    outline: none;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="text"]{
+    text-align: center;
+}
+.imgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+}
+
+.header{
+    text-align: center;
+}
+#img-wrapper{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.success{
+    height: 30px;
+    width: 130px;
+    outline: none;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));
+  font-weight: 600;
+  color: aliceblue;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+#paragraph-textarea{
+    height: 70px;
+    width: 300px;
+    resize: none;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+#paragraph-textarea::-webkit-scrollbar{
+    width: 0px;
+}
+#paragraph-textarea::-webkit-scrollbar{
+    display: none;
+}
+.overlay {
+    position: fixed; 
+    width: 100%; 
+    right: 0;
+    bottom: 0;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6); 
+    cursor: pointer; 
+    user-select: none;
+    z-index: 99; 
+  }
+  h1{
+    color: aliceblue;
+  }
+  h1{
+    display: none;
+  }
+
+  #closepopUp{
+    position:fixed;
+    right: 2rem;
+    top: 1rem;
+    color: aliceblue;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 99999;
+    display: none;
+  }
+
+/* popup styling */
+.relative{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+#popup-container{
+    visibility: hidden;
+    opacity: 0;
+}
+.popup-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(67, 67, 67));
+    height:500px;
+    width: 700px;
+    position: absolute;
+    top: 108px;
+}
+
+
+#img-wrapper{
+    height: 300px;
+    width: 700px;
+    margin-top: -16rem;
+    background-position: center;
+    object-fit:contain;
+}
+
+div{
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:705px){
+    .success-message{
+    font-size: 1.3rem;
+    }
+    .popup-container{
+        height:400px;
+        width: 600px;
+    }
+    #img-wrapper{
+        width: 600px;
+    }
+}
+@media screen and (max-width:599px){
+    .popup-container{
+        height:380px;
+        width: 500px;
+    }
+    #img-wrapper{
+        width: 500px;
+    }
+    .success-message{
+        font-size: 1.3rem;
+        }
+}
+@media screen and (max-width:500px){
+    .popup-container{
+        height:350px;
+        width: 400px;
+    }
+    #img-wrapper{
+        width: 400px;
+    }
+    .success-message{
+        font-size: 1.3rem;
+        }
+}
+
+@media screen and (max-width:400px){
+    .popup-container{
+        height:500px;
+        width: 350px;
+    }
+    #img-wrapper{
+        width: 350px;
+    }
+    .success-message{
+        font-size: 1.3rem;
+        }
+}

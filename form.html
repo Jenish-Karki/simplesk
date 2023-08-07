@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/68f5f447ed.js" crossorigin="anonymous"></script>
+    <title>Login Form</title>
+</head>
+<body>
+
+<div class="container_wrapper">
+
+
+
+
+<div class="container">
+    <div class="heading-wrapper">
+    <h1>Cars Available</h1>
+    </div>
+
+
+<div class="contents">  
+
+<form class="form_container" method="get" id="submitForm">
+  <h3>Log Into Website</h3>
+
+<input required maxlength="20" type="text" class="input_for_username" id="inputUsername" placeholder="Username">
+
+<input required maxlength="20" type="password" class="input_for_password" id="inputPassword" placeholder="Password">
+<i class="fa-solid fa-eye" id="openEye"></i>
+<i class="fa-solid fa-eye-slash" id="closeEye"></i>
+
+<button class="logIn_button" id="login_Btn" type="submit" onclick="redirect()">Log In</button>
+
+
+<button class="create_acc_button" id="createAccount_Btn" onclick="accountCreate()">Create Account</button>
+
+</form>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+    <script src="form.js"></script>
+</body>
+</html>

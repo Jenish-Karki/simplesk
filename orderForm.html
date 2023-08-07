@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <script src="https://kit.fontawesome.com/68f5f447ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="orderForm.css">
+
+</head>
+<body>
+
+   
+<div class="form-container-wrapper">
+    
+<div class="form-container">
+
+
+    <div class="form-content">
+           <h1 class="heading">Car Purchase Form</h1>
+        <hr>
+    <form action="" method="get">
+    <div class="rowOne">
+    
+        <div>
+            <label for="requisition">Requisition Number</label><br> 
+            <input required id="checkOne" type="text" maxlength="20" placeholder="RON-1"/>   
+        </div>
+    
+    <div>
+        <label for="date">Date</label><br>
+        <input required id="checkTwo" type="date">
+    </div>
+    </div>
+    
+    
+    <div class="rowTwo">
+    <div>
+        <label for="showroom">Showroom Name</label><br>
+        <input required id="checkThree" type="text" maxlength="20" placeholder="Honda Suppliers">
+    </div>
+        <div>
+        <label for="showroom-adress">Showroom Adress</label><br>
+        <input required id="checkFour" type="text" maxlength="20">
+        <h6>Street Adress</h6>
+    </div>
+    </div>
+    
+    <div class="rowThree">
+            
+    <div>
+        <label for="city">City</label><br>
+        <input required id="checkFive" type="text" maxlength="20">
+    </div>
+    <div>
+        
+        <label for="city">Stte/Province</label><br>
+        <input required id="checkSix" type="text" maxlength="20">
+    
+    </div>
+    
+    </div>
+    
+    
+    <div class="rowFour">
+    <div>
+        <label for="city">Postal Zip Code</label><br>
+        <input required id="checkSeven" type="text" maxlength="20">
+    
+    
+    </div>
+    <div>
+        <label for="number">Showroom Number</label><br>
+        <input required id="checkEight" type="number" maxlength="20">
+    
+    </div>
+    </div>
+    
+    <div class="rowFive">
+        
+    <div>
+        <label for="mail">Showroom Email</label><br>
+        <input required id="checkNine" type="text" maxlength="20">
+    
+    </div>
+    
+       <div>
+         
+        <label for="contact">Contact Person</label><br>
+        <input required id="checkTen" type="text" maxlength="20">
+       </div>
+    
+    </div>
+    <div class="rowSix">
+    <div>
+        <label for="adress">Ship to Adress</label><br>
+        <input required id="checkEleven" type="text" maxlength="20">
+    
+    </div>
+    <div>
+        <label for="courier">Delivary Type</label><br>
+        <input required id="checkTwelve" type="text" maxlength="20">
+    </div>
+    </div>
+    <div class="rowSeven">
+    <div>
+        <label for="shipping">Shipping Via</label><br>
+        <input required id="checkThirteen" type="text" maxlength="20">
+    
+    </div>
+    
+    
+    </div>
+  
+    <div class="button">
+      
+
+            <button class="success" onclick="backTohome()"><i class="fa-solid fa-backward"></i>Go Back</button>
+  
+        <button class="success" id="submitBtn">Submit<i class="fa-solid fa-forward"></i></button>
+    </div>
+    </form>
+    
+    </div>
+    </div>
+    
+</div>
+
+    <script src="orderForm.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <script src="https://kit.fontawesome.com/68f5f447ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="explore.css">
+
+</head>
+<body>
+    <div>
+        <h1 id="success-messsage">Successfully created your post</h1>
+    </div>
+    <i class="fa-solid fa-xmark" id="closepopUp"></i>
+    <div id="overlay"></div>
+
+    <h3 class="header">Create a form for your car</h3>
+<div class="input-wrapper">
+    <label for="input" class="labelForInput">Drag and Drop Image Here</label>
+    <input class="dragAndDrop" type="file" accept="image/*" id="inputforImage">
+</div>
+
+      
+<div class="addInfo">
+
+
+
+    
+<input type="text" requiresd maxlength="20" placeholder="Heading...." id="inputForheading">
+<textarea required name="text" maxlength="100" id="paragraph-textarea" placeholder="Add more information.."></textarea>
+
+       <div class="button">
+        <button class="success" id="submitBtn">Create<i class="fa-solid fa-forward"></i></button>
+       </div>
+ 
+</div>
+
+
+
+
+
+</div>
+
+
+<div class="relative" id="popup-container">
+    <div class="popup-container" id="zIndex">
+        <div id="img-wrapper">
+        </div>
+<div class="texts" id="textWrapper">
+<h3 id="saleHeading"></h3>
+<div class="pWrapper"><p id="information"></p></div>
+</div>
+    </div>
+    
+</div>
+
+    <script src="explore.js"></script>
+    </body>
+    </html>

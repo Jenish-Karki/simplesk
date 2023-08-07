@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <script src="https://kit.fontawesome.com/68f5f447ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="overlay"></div>
+        <!--header section start -->
+
+    <!-- header-container is the main container -->
+    <div class="header-container">
+
+        <!-- all contents of header are inside header-content -->
+        <div class="header-content">
+
+            <!-- all small components are wrapped with a name-wrapper for better understanding-->
+               <div class="logo-wrapper">
+                <!-- logo is not good it is just for a placeholder.. -->
+                <img src="newlogo.gif" class="logo">
+               </div>
+
+
+             <div class="hrefs-container-wrapper" id="ShowHideLinks">
+                 <a href="#" class="ahref">Home</a>
+                 <a href="#" class="ahref">Cart</a>
+                 <a href="#" class="ahref">Offers</a>
+                 <a href="#" class="ahref">Search<i class="fa-solid fa-magnifying-glass"></i></a>
+             </div>
+             
+             <div class="user-profile-wrapper" id="user-profile">
+                <i class="fa-solid fa-gear" id="settingsBtn"></i>
+                <i class="fa-solid fa-xmark" id="closeUserProfileBtn"></i>
+                <i class="fa-solid fa-right-from-bracket" onclick="backToLoginPage()"></i>
+               </div>
+
+<div class="showHideIcons-container">
+<i class="fa-solid fa-bars" id="show-Links"></i>
+<i class="fa-solid fa-xmark" id="hide-Links"></i>
+</div>
+
+
+        
+<div class="user-credentials" id="userCredentials">
+    
+    <div class="profile-container">
+        <div class="profile-content">
+            <div class="image-and-user-info-wrapper">
+    <div class="image-wrap" id="imageWrapper">
+        <img src="diego-sanchez-O1M0-B_fN3I-unsplash.jpg" class="userImage" id="staticImage">
+    </div>
+                <h3 class="username" id="userName">Kyle</h3>
+                <h4 class="occupation" id="profession">Web Designer</h4>
+                <i class="fa-solid fa-pen-to-square" id="editProfileBtn" onclick="editprofilePage()"></i>
+                <h6 class="edit-text">Edit Profile</h6>
+            </div>
+        </div>
+    
+    <div class="user-information-wrapper">
+            <h3 class="heading">Information</h3>
+            <hr class="line">
+    
+    <div class="mail-section">
+        <h3 class="mail">Email</h3>
+        <p class="actual-info" id="editEmail">eg.@gmail.com</p>
+
+    </div>
+    
+    <div class="phone-number-section">
+        <h3 class="phone">Password</h3>
+        <p class="actual-info" id="editPhone">Password@123</p>
+            </div>
+    <div class="hobbies-section">
+    <h3 class="heading">Location</h3>
+    <p class="actual-info" id="editlocation">State..</p>
+
+    </div>
+
+    <div class="icons-container">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+    
+    </div>
+
+    </div>
+    
+    </div>
+
+
+<div class="user-profile-edit" id="userprofileEdit">
+    <button class="back-button"  id="backBtn">
+        <i class="fa-solid fa-left-long"></i>
+        <h5 class="back-text">Go Back</h5>
+    </button>
+  <div class="form-container">
+
+<div class="mail-wrapper">
+    <label for="Email">Enter new Email</label>
+    <input type="text" maxlength="17" id="inputForMail" placeholder="eg@gmail.com">
+</div>
+<div class="phone-wrapper">
+    <label for="Phone">Enter new Password</label>
+    <input type="text" 
+    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+    maxlength = "11"
+    id="inputForPhone"
+    placeholder="pass@123"
+    >
+</div>
+<div class="location-wrapper">
+    <label for="location">Update your Location</label>
+    <button id="buttonForlocation">Update..</button>
+</div>
+
+
+
+
+
+<div class="upload-wrapper" id="uploadWrapper">
+        <label for="input" class="labelForInput">Drag and Drop Image Here</label>
+        <input class="dragAndDrop"  type="file" accept="image/*" id="dropImage">
+</div>
+
+<button type="button" id="changeSave" onclick="save()">Save Changes</button>
+
+  </div>
+
+</div>
+
+        </div>
+    </div>
+
+    <div class="heading-text">
+        <h2 class="home-heading">Let's Ride Pagani huayra bc</h2>
+     </div>
+
+<!-- header--section END -->
+    
+
+<!-- homepage--content section start -->
+
+<div class="homepage-container">
+    <div class="homepage-image-wrapper">
+        <img src="../car2.jpg" class="homeImage">
+    </div>
+</div>
+
+
+<div class="cars-container">
+
+
+ <div class="boxes-container">
+    <div class="box">
+        <i class="fa-solid fa-house"></i>
+        <h4>100+ Branches</h4>
+    </div>
+    <div class="box">
+        <i class="fa-solid fa-car"></i>
+        <h4>2000+ Cars Sold</h4>
+    </div>
+    <div class="box">
+        <i class="fa-solid fa-users"></i>
+        <h4>
+            190+<br>
+            Happy Customers</h4>
+    </div>
+    <div class="box">
+        <i class="fa-solid fa-car"></i>
+        <h4>200+ New Cars</h4>
+    </div>
+</div>
+    <div class="videoOne-wrapper">
+        <video src="video2.mp4" autoplay loop muted class="videoOne"></video>
+    </div>
+
+    <div class="videoTwo-wrapper">
+        <video src="video3.mp4" autoplay muted loop class="videoTwo"></video>
+    </div>
+</div>
+
+
+<div class="parent-slider">
+    
+<div class="slider" data-carousel>
+
+ <i class="fa-solid fa-left-long" data-carousel-button="prev" id="leftButton"></i>
+ <i class="fa-solid fa-right-long" data-carousel-button="next" id="rightButton"></i>
+
+<div class="imagesContainer" data-slides>
+    
+<div class="slideImage" data-active>
+    <img src="slide1.jpg" class="sliderImages">
+</div>
+
+<div class="slideImage">
+    <img src="slide2.jpg" class="sliderImages">
+</div>
+<div class="slideImage">
+    <img src="slide3.jpg" class="sliderImages">
+</div>
+<div class="slideImage">
+    <img src="slide4.jpg" class="sliderImages">
+</div>
+<div class="slideImage">
+    <img src="slide5.jpg" class="sliderImages">
+</div>
+</div>
+</div>
+
+</div>
+
+
+    
+<div class="order-form-container">
+    <div class="buttons">
+    <button type="button" class="viewInfo" id="showData">Explore</button>
+    <button type="button" class="order" id="orderBtn">Order Now</button>
+    </div>
+</div>
+
+
+<div class="footer-container">
+    <div class="space-between">
+        <img src="newlogo.gif" class="logo2">
+        <h4 id="goTop"><i class="fa-solid fa-up-long"></i>Return to top</h4>
+    </div>
+
+
+
+
+    <div class="footer-content">
+        <div class="footer-line-wrap">
+            <hr class="footer-line">
+        </div>
+
+
+
+
+
+
+<div class="headings-container">
+
+<div class="heading-wrapper">
+    <h3 class="footer-heading">About</h3>
+    <h3 class="footer-heading">Contact</h3>
+    <h3 class="footer-heading">Connect</h3>
+    <h3 class="footer-heading">Subscribe</h3>
+</div>
+
+<div class="line-wrapper">
+    <div class="small-line"></div>
+    <div class="small-line"></div>
+    <div class="small-line"></div>
+    <div class="small-line"></div>
+</div>
+
+<div class="paragraphs-wrapper">
+
+    <div class="about-section">
+        <p class="footer-paragraph">Privacy Notice</p>
+        <p class="footer-paragraph">View Your Notice</p>
+        <p class="footer-paragraph">Interest Based Ads</p>   
+        <p class="footer-paragraph">Terms Of Use</p>
+        <p class="footer-paragraph">Our Company</p>
+        <p class="footer-paragraph">Carrers</p>
+        <p class="footer-paragraph">Advertise With Us</p>
+    </div>
+
+    <div class="contact-section">
+        <p class="footer-paragraph">Contact Us</p>
+        <p class="footer-paragraph">Customer Service</p>
+    </div>
+
+    <div class="connection-section">
+        <p class="footer-paragraph">Email Newsletter</p>
+        <p class="footer-paragraph"><i class="fa-brands fa-facebook"></i>Facebook</p>
+        <p class="footer-paragraph"><i class="fa-brands fa-twitter"></i>Twitter</p>
+        <p class="footer-paragraph"><i class="fa-brands fa-pinterest"></i>Pinterest</p>
+        <p class="footer-paragraph"><i class="fa-brands fa-google"></i>Google</p>
+        <p class="footer-paragraph"><i class="fa-brands fa-instagram"></i>Instagram</p>
+        <p class="footer-paragraph">Advertise With Us</p>
+    </div>
+
+    <div class="subscribe-section">
+        <p class="footer-paragraph">Android App</p>
+        <p class="footer-paragraph">New Launched Demo</p>
+        <p class="footer-paragraph">Terms Of Use</p>
+        <p class="footer-paragraph">Our Company</p>
+    </div>
+
+</div>
+
+
+</div>
+
+    </div>
+    <div class="footer-line-wrap">
+        <hr class="footer-line">
+    </div>
+
+        <div class="copyright-section">
+            <h5 class="greet">Thank You For Visiting</h5>
+        <p class="copyright-text">&#169 Copyright 2080 Car Company</p>
+         </div>
+
+
+    </div>
+
+
+
+
+<!-- homepage content section end -->
+    <script src="app.js"></script>
+</body>
+</html>
